@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Einführung Javascript</title>
+  <link rel="stylesheet" href="https://unpkg.com/mocha/mocha.css" />
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <main>
+
+    <h1>Einführung in Javascript</h1>
+    <section>
+      <h3>Benutzer informieren</h3>
+      <div class="content">
+        Man kann dem Benutzer eine Nachricht schreiben, wenn ein Knopf
+        gedrückt wird.
+      </div>
+      <div class="center">
+        <button onclick="sayHello()">Say Hello!!!</button>
+      </div>
+    </section>
+    <section>
+      <h3>Hintergrund ändern</h3>
+      <div class="content">
+        Mann kann die Hintergrundfarbe der Webseite auf Knopfdruck verstellen.
+      </div>
+      <div class="center">
+        <button onclick="changeBackground()">Hintergrund ändern</button>
+      </div>
+    </section>
+  </main>
+
+
+  <script type="module" src="tests/run.js"></script>
+
+</body>
+
+</html>

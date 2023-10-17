@@ -36,6 +36,44 @@
         <button onclick="changeBackground()">Hintergrund ändern</button>
       </div>
     </section>
+    <section>
+      <h3>Text löschen</h3>
+      <div class="content" id="to-delete">
+        Mann kann einen Inhalt eines Textes per Knopfdruck löschen.
+      </div>
+      <div class="center">
+        <button onclick="deleteText()">Text löschen!</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Counter mit Knopf</h3>
+      <div class="content">
+        Mann kann einen Counter erstellen und ihn per Knopfdruck erhöhen.
+      </div>
+      <div  id="counter" class="center">
+        0
+      </div>
+      <div class="center">
+        <button onclick="incrementCounter()">+1</button>
+        <button onclick="resetCounter()">RESET</button>
+        <button onclick="decrementCounter()">-1</button>
+      </div>
+    </section>
+
+    <section>
+      <h3>Texte durch Inputs anpassen</h3>
+      <div class="content">
+        Mann kann den Content aus einem Input Feld dem Putput anhängen lassen.
+      </div>
+      <pre class="content" id="output">
+        ...
+      </pre>
+      <div class="center">
+        <input onclick="writeText()" id="input">Schreibe etwas!</input>
+      </div>
+    </section>
+
   </main>
 
 

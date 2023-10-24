@@ -66,11 +66,24 @@
       <div class="content">
         Mann kann den Content aus einem Input Feld dem Putput anhängen lassen.
       </div>
-      <pre class="content" id="output">
-        ...
+      <pre id="output" class="content">
+      Hier wird Text angehängt...<br>
       </pre>
       <div class="center">
-        <input onclick="writeText()" id="input">Schreibe etwas!</input>
+        <input id="input" placeholder="Schreibe etwas!"></input>
+        <button onclick="writeText()">Text anhängen!</button>
+      </div>
+    </section>
+
+    <section>
+      <h3 id="bar">Custom Background</h3>
+      <div class="content">
+        Die Hinterhrundfarbe lässt sich auch vom Benutzer personalisieren.
+      </div>
+      <div class="center">
+        <input type="range" max="255" value="128" class="slider" id="redSlider" oninput="customBackground()"><br>
+        <input type="range" max="255" value="128" class="slider" id="greenSlider" oninput="customBackground()"><br>
+        <input type="range" max="255" value="128" class="slider" id="blueSlider" oninput="customBackground()"><br>
       </div>
     </section>
 

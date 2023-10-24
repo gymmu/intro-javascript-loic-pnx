@@ -29,12 +29,28 @@ function decrementCounter() {
 function resetCounter() {
   const numberElement = document.querySelector("#counter")
   let num = parseInt(numberElement.textContent)
-  num = 0
-  numberElement.textContent = num 
+  numberElement.textContent = 0
 }
 
 function writeText() {
-  const textContentElem = document.querySelector("output")
-  const textInput = document.querySelector("#input")
-  textContentElem.textContent = textContentElem
+  const input = document.querySelector("#input")
+  const inputText = input.value
+  const output = document.querySelector("#output")
+  const outputBefore = output.textContent
+ 
+  output.textContent = outputBefore + "\n" + inputText 
 }
+
+
+function customBackground() {
+  const bar = document.querySelector("#bar")
+
+  const red = parseInt(document.querySelector("#redSlider").value)
+  const green = parseInt(document.querySelector("#greenSlider").value)
+  const blue = parseInt(document.querySelector("#blueSlider").value)
+
+  bar.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`
+  bar.style.color = `rgb(${255-red}, ${255-green}, ${255-blue})`
+
+}
+

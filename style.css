@@ -51,6 +51,12 @@ input[id="blueSlider"]::-webkit-slider-runnable-track {
   height: 0.6rem;
 }
 
+input[id="intervalSlider"]::-webkit-slider-runnable-track {
+  background: #f01abb;
+  height: 0.6rem;
+  direction: rtl;
+}
+
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -61,3 +67,4 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 0.3rem; 
   border: black;
 }
+

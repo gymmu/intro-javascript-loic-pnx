@@ -1,3 +1,7 @@
+function windowClose() {
+  window.close()
+}
+
 function sayHello() {
   alert("Hello World!")
 }
@@ -56,3 +60,57 @@ function customBackground() {
 
 }
 
+function pickRandomColor() {
+  const colorList = ["red", "green", "blue"]
+  const randomIndex = Math.floor(Math.random()*colorList.length)
+  const randomColor = colorList[randomIndex];
+
+  const red = Math.floor(Math.random() * 256)
+  const green = Math.floor(Math.random() * 256)
+  const blue = Math.floor(Math.random() * 256)
+
+  const bodyElem = document.querySelector("body")
+  bodyElem.style.background = `rgb(${red}, ${green}, ${blue})`
+}
+
+let intervalID = null
+
+function changeInterval() {
+
+
+  if (intervalID) clearInterval(intervalID)
+  const sliderValue = parseInt(document.querySelector("#intervalSlider").value)
+  const speed = sliderValue
+
+  intervalID = setInterval(pickRandomColor, speed)
+
+  const numElement = document.querySelector("#numElem")
+  numElement.textContent = speed
+}
+
+
+
+
+//var rred = 0
+//var ggreen = 0
+//var bblue = 0
+
+//function fadeColor() {
+  //var rred = rred + 1
+
+  //if (rred = 256) {
+  //  var rred = 0
+  //  var ggreen = ggreen + 1
+  //}
+
+  //if (ggreen = 256) {
+  //  var rred = 0
+  //  var ggreen = 0
+  //  var bblue = bblue + 1
+  //}
+
+  //const bodyElem = document.querySelector("body")
+  //bodyElem.style.background = `rgb(${rred}, ${ggreen}, ${bblue})`
+//}
+
+//setInterval(colorFade, 30)

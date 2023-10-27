@@ -4,7 +4,9 @@ function sayHello() {
 
 function changeBackground() {
   const body = document.querySelector("body")
-  body.style.backgroundColor = "darkgrey"
+  const clr = document.getElementById("bgColor")
+  const clrSelect = clr.value
+  body.style.backgroundColor = clrSelect
 }
 
 function deleteText() {
